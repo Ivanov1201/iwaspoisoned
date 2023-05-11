@@ -1,0 +1,29 @@
+@media only screen and (max-width: 767px){
+    header .header-wrapper {
+        padding: 0px 4px;
+    }
+    .registered .step-one h5,
+    .tags .tag-wrapper,
+    .location-box{
+        margin-bottom: 16px;
+    }
+    section.registered{
+        padding: 0px 4px;
+    }
+    header {
+        padding: 20px 0px;
+    }
+    .step-btn button.next{
+        width: 100%;
+        margin-top: 0;
+    }
+    section.registered .stepper-wrapper{
+        padding: 24px 16px;
+    }
+    header{
+        margin-bottom: 24px;
+    }
+    .tags .tag-wrapper ul li a{
+        padding: 8px 16px;
+    }
+}

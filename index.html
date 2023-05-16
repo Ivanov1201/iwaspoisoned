@@ -9,6 +9,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,400&display=swap"
         rel="stylesheet">
+    <!-- fontawasome css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <!-- bootstrap css  -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <!-- style css -->
@@ -51,32 +53,66 @@
                                 <div class="tags">
                                     <p class="">I am reporting</p>
                                     <div class="tag-wrapper ">
-                                        <ul class="d-flex no-wrap align-items-center">
-                                            <li>
-                                                <a href="#0">Nausea</a>
-                                            </li>
-                                            <li>
-                                                <a href="#0">Diarrhea</a>
-                                            </li>
-                                            <li>
-                                                <a href="#0">Vomiting</a>
-                                            </li>
-                                            <li>
-                                                <a href="#0">Something else</a>
-                                            </li>
-                                        </ul>
+                                        <div class="check-boxes">
+                                            <div class="symptoms-container">
+                                                <input type="checkbox" class="custom-control-input" value="Nausea" id="nausea">
+                                                <label class="innerBtn activeSymptom" for="nausea">
+                                                    Nausea
+                                                </label>
+                                            </div>
+                                            <div class="symptoms-container">
+                                                <input type="checkbox" class="custom-control-input" value="Diarrhea" id="diarrhea" >
+                                                <label class="innerBtn" for="diarrhea">
+                                                    Diarrhea
+                                                </label>
+                                            </div>
+                                            <div class="symptoms-container">
+                                                <input type="checkbox" class="custom-control-input" value="Vomiting" id="vomiting" >
+                                                <label class="innerBtn" for="vomiting">
+                                                    Vomiting
+                                                </label>
+                                            </div>
+                                            <div class="symptoms-container">
+                                                <input type="checkbox" class="custom-control-input" value="Vomiting" id="something-else" >
+                                                <label class="innerBtn" for="something-else">
+                                                    Something else
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="location-box">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <p>Got sick from</p>
-                                        <a href="#0">I’m not sure</a>
+                                        <p class="sick-from active">Got sick from</p>
+                                        <p class="not-sure">I’m not sure</p>
                                     </div>
-                                    <select name="" id="">
-                                        <option value="">New York</option>
-                                        <option value="">Tokyo</option>
-                                        <option value="">Texas</option>
-                                    </select>
+                                    <input type="text" class="place" placeholder="Where? e.g. Moe's Tavern"  autocomplete="off" />
+                                </div>
+                                <div id="full-stars-example-two" class="d-none">
+                                    <p>Rate the business</p>
+                                    <div class="rating-group">
+                                        <input disabled="" checked="" class="rating__input rating__input--none" name="rating3" id="rating3-none" value="0" type="radio">
+                                        <label aria-label="1 star" class="rating__label" for="rating3-1">
+                                            <i class="rating__icon rating__icon--star fa fa-star"></i>
+                                        </label>
+                                        <input class="rating__input" name="rating3" id="rating3-1" value="1" type="radio">
+                                        <label aria-label="2 stars" class="rating__label" for="rating3-2">
+                                            <i class="rating__icon rating__icon--star fa fa-star"></i>
+                                        </label>
+                                        <input class="rating__input" name="rating3" id="rating3-2" value="2" type="radio">
+                                        <label aria-label="3 stars" class="rating__label" for="rating3-3">
+                                            <i class="rating__icon rating__icon--star fa fa-star"></i>
+                                        </label>
+                                        <input class="rating__input" name="rating3" id="rating3-3" value="3" type="radio">
+                                        <label aria-label="4 stars" class="rating__label" for="rating3-4">
+                                            <i class="rating__icon rating__icon--star fa fa-star"></i>
+                                        </label>
+                                        <input class="rating__input" name="rating3" id="rating3-4" value="4" type="radio">
+                                        <label aria-label="5 stars" class="rating__label" for="rating3-5">
+                                            <i class="rating__icon rating__icon--star fa fa-star"></i>
+                                        </label>
+                                        <input class="rating__input" name="rating3" id="rating3-5" value="5" type="radio">
+                                    </div>
                                 </div>
                                 <div class="describe-box">
                                     <textarea name="" id="" cols="30" rows="10"

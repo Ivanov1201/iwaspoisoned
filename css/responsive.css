@@ -15,7 +15,7 @@
     }
     .step-btn button.next{
         width: 100%;
-        margin-top: 0;
+        margin-top: 16px;
     }
     section.registered .stepper-wrapper{
         padding: 24px 16px;
@@ -25,5 +25,8 @@
     }
     .tags .tag-wrapper ul li a{
         padding: 8px 16px;
+    }
+    .symptoms-container{
+        margin-bottom: 0;
     }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,22 +19,23 @@
     <!-- responsive css -->
     <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
     <!-- header start -->
     <header>
         <div class="container">
             <div class="d-flex justify-content-between align-items-center header-wrapper">
                 <a href="#0">
-                    <img src="./images/img/logo.svg" alt="">
+                    <img src="./images/img/logo.svg" alt="header-logo">
                 </a>
                 <div class="d-flex align-items-center">
                     <a href="#0" class="d-md-none">
-                        <img src="./images/img/Search.svg" alt="">
+                        <img src="./images/img/Search.svg" alt="search-icon">
                     </a>
-                    <button class="make-report d-md-none" >Make a report</button>
+                    <button class="make-report d-md-none">Make a report</button>
                     <div class="menu">
                         <a href="#0">
-                            <img src="./images/img/filter.svg" alt="">
+                            <img src="./images/img/filter.svg" alt="filter">
                         </a>
                     </div>
                 </div>
@@ -49,74 +51,110 @@
                     <form id="example-with-groups">
                         <div class="step">
                             <div class="step-one">
-                                <h5 class="">Report a food safety issue Protect others!</h5>
-                                <div class="tags">
-                                    <p class="">I am reporting</p>
-                                    <div class="tag-wrapper ">
-                                        <div class="check-boxes">
-                                            <div class="symptoms-container">
-                                                <input type="checkbox" class="custom-control-input" value="Nausea" id="nausea">
-                                                <label class="innerBtn activeSymptom" for="nausea">
-                                                    Nausea
-                                                </label>
-                                            </div>
-                                            <div class="symptoms-container">
-                                                <input type="checkbox" class="custom-control-input" value="Diarrhea" id="diarrhea" >
-                                                <label class="innerBtn" for="diarrhea">
-                                                    Diarrhea
-                                                </label>
-                                            </div>
-                                            <div class="symptoms-container">
-                                                <input type="checkbox" class="custom-control-input" value="Vomiting" id="vomiting" >
-                                                <label class="innerBtn" for="vomiting">
-                                                    Vomiting
-                                                </label>
-                                            </div>
-                                            <div class="symptoms-container">
-                                                <input type="checkbox" class="custom-control-input" value="Vomiting" id="something-else" >
-                                                <label class="innerBtn" for="something-else">
-                                                    Something else
-                                                </label>
+                                <input type="hidden" name="_token" value="akT4CzgXgYdWymAG4z8Z8SnKkIKSJQb5WXCCUIqg">
+                                <input type="hidden" name="lang" value="en">
+                                <input type="hidden" name="site" value="1">
+                                <div class="step-header">Report a food safety issue Protect others!</div>
+                                <input type="hidden" name="form-step" value="117">
+                                <input type="hidden" name="step" value="1">
+                                <input type="hidden" name="form_id" value="26">
+
+                                <div class="form-group d-none">
+                                    <label for="address117">Address</label>
+                                    <input type="text" name="address" id="address117" class="form-control"
+                                        placeholder="Enter your address">
+                                </div>
+                                <div class="form-group d-none">
+                                    <label for="first_name117">First name</label>
+                                    <input type="text" name="first_name" id="first_name117" class="form-control"
+                                        placeholder="Enter your first name">
+                                </div>
+                                <div class="form-group d-none">
+                                    <label for="last_name117">Last name</label>
+                                    <input type="text" name="last_name" id="last_name117" class="form-control"
+                                        placeholder="Enter your last name">
+                                </div>
+
+                                <div class="html561">I am reporting<br></div>
+                                <div class="tag-wrapper">
+                                    <div class="check-boxes">
+                                        <div class="symptoms-container">
+                                            <input type="checkbox" class="custom-control-input" value="Nausea"
+                                                id="nausea">
+                                            <label class="innerBtn activeSymptom" for="nausea">
+                                                Nausea
+                                            </label>
+                                        </div>
+                                        <div class="symptoms-container">
+                                            <input type="checkbox" class="custom-control-input" value="Diarrhea"
+                                                id="diarrhea">
+                                            <label class="innerBtn" for="diarrhea">
+                                                Diarrhea
+                                            </label>
+                                        </div>
+                                        <div class="symptoms-container">
+                                            <input type="checkbox" class="custom-control-input" value="Vomiting"
+                                                id="vomiting">
+                                            <label class="innerBtn" for="vomiting">
+                                                Vomiting
+                                            </label>
+                                        </div>
+
+                                        <div class="symptoms-container">
+                                            <input type="checkbox" class="custom-control-input" data-mapping="1"
+                                                value="Something else" id="symptoms-597" name="symptoms[]"
+                                                data-gtm="form-something-else">
+                                            <label class="innerBtn activeSymptom" for="symptoms-597">
+                                                Something else
+                                            </label>
+                                            <div class="invalid-feedback"
+                                                style="position: absolute; left: 22px; margin-top: -9px">
+                                                Please select at least one of the options
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="location-box">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <p class="sick-from active">Got sick from</p>
-                                        <p class="not-sure">I’m not sure</p>
-                                    </div>
-                                    <input type="text" class="place" placeholder="Where? e.g. Moe's Tavern"  autocomplete="off" />
+
+                                <div class="btn-group btn-group-toggle w-100 place-toggle" data-toggle="buttons">
+                                    <label class="btn btn-light sick-from-main  active" style="border-bottom-left-radius: 0">
+                                        <input class="sick-from" type="radio" name="options" placeholder="Where? e.g. Moe's Tavern"
+                                            id="option565" checked="checked" data-gtm="form-I-got-sick">Got sick from
+                                    </label>
+
+                                    <label class="btn btn-light gray-color not-sure-main" style="border-bottom-right-radius: 0">
+                                        <input class="not-sure " type="radio" name="options" placeholder="Type your city and state..."
+                                            id="option566" data-gtm="form-not-sure"> I’m not sure
+                                    </label>
                                 </div>
-                                <div id="full-stars-example-two" class="d-none">
-                                    <p>Rate the business</p>
-                                    <div class="rating-group">
-                                        <input disabled="" checked="" class="rating__input rating__input--none" name="rating3" id="rating3-none" value="0" type="radio">
-                                        <label aria-label="1 star" class="rating__label" for="rating3-1">
-                                            <i class="rating__icon rating__icon--star fa fa-star"></i>
-                                        </label>
-                                        <input class="rating__input" name="rating3" id="rating3-1" value="1" type="radio">
-                                        <label aria-label="2 stars" class="rating__label" for="rating3-2">
-                                            <i class="rating__icon rating__icon--star fa fa-star"></i>
-                                        </label>
-                                        <input class="rating__input" name="rating3" id="rating3-2" value="2" type="radio">
-                                        <label aria-label="3 stars" class="rating__label" for="rating3-3">
-                                            <i class="rating__icon rating__icon--star fa fa-star"></i>
-                                        </label>
-                                        <input class="rating__input" name="rating3" id="rating3-3" value="3" type="radio">
-                                        <label aria-label="4 stars" class="rating__label" for="rating3-4">
-                                            <i class="rating__icon rating__icon--star fa fa-star"></i>
-                                        </label>
-                                        <input class="rating__input" name="rating3" id="rating3-4" value="4" type="radio">
-                                        <label aria-label="5 stars" class="rating__label" for="rating3-5">
-                                            <i class="rating__icon rating__icon--star fa fa-star"></i>
-                                        </label>
-                                        <input class="rating__input" name="rating3" id="rating3-5" value="5" type="radio">
+
+                                <div class="form-label-group sick-form mb-2">
+                                    <input type="text" class="place form-control pac-target-input" data-mapping="9"
+                                        id="title-117" name="title" placeholder="Where? e.g. Moe's Tavern" value=""
+                                        data-gtm="form-title" autocomplete="off">
+                                    <!-- <label for="title-117">Where? e.g. Moe's Tavern</label> -->
+                                    <div class="invalid-feedback">
+                                        Please fill in incident place
                                     </div>
+                                    <input type="hidden" name="googleApiData">
+                                </div>
+
+                                <div class="star-rating mt-2 mb-0 d-inline-block">
+                                    <label for="-117" class="float-left mr-1 mb-1">Rate the business</label>
+                                    <div class="la la-star px-0 h3 float-left mb-1" data-rating="1"
+                                        style="color: rgb(209, 209, 209);"></div>
+                                    <div class="la la-star px-0 h3 float-left mb-1" data-rating="2"
+                                        style="color: rgb(209, 209, 209);"></div>
+                                    <div class="la la-star px-0 h3 float-left mb-1" data-rating="3"
+                                        style="color: rgb(209, 209, 209);"></div>
+                                    <div class="la la-star px-0 h3 float-left mb-1" data-rating="4"
+                                        style="color: rgb(209, 209, 209);"></div>
+                                    <div class="la la-star px-0 h3 float-left mb-1" data-rating="5"
+                                        style="color: rgb(209, 209, 209);"></div>
+                                    <input type="hidden" name="rating-value" value="">
+                                    <div class="clearfix"></div>
                                 </div>
                                 <div class="describe-box">
-                                    <textarea name="" id="" cols="30" rows="10"
-                                        placeholder="What happened and when? Describe your situation"></textarea>
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="Tell your story: Please include when it happened, what happened, and any other relevant information you consider. The more details, the better."></textarea>
                                     <div class="file-attached">
                                         <ul>
                                             <li>
@@ -132,13 +170,15 @@
                                                 <img src="./images/img/voice.svg" alt="">
                                             </li>
                                         </ul>
-                                        <div class="toggle-box">
-                                            <input type="checkbox" id="switch" />
+                                        <div class="toggle-box custom-control custom-switch">
+                                            <input name="private" type="checkbox" class="custom-control-input alert-success" id="switch">
                                             <label for="switch"></label>
                                             <p>Make a private</p>
                                         </div>
                                     </div>
                                 </div>
+
+                                <input type="hidden" name="notes" value="">
                             </div>
                         </div>
                         <div class="step">
@@ -153,15 +193,16 @@
                         <div class="buttons step-btn">
                             <!-- <button type="button" class="back btn">Back</button> -->
                             <button type="button" class="next">Continue</button>
-                            <button type="submit" class="submit btn">Submit</button>
+                            <!-- <button type="submit" class="submit btn">Submit</button> -->
                         </div>
+                    
                         <div class="progress-bar"></div>
+                    </form>
                 </div>
             </div>
         </section>
         <!-- registered form start -->
     </main>
-
     <!-- jqurey -->
     <script src="./js/jquery.min.js"></script>
     <!-- bootstrap 5 js  -->

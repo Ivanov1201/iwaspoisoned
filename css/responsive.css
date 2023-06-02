@@ -29,4 +29,13 @@
     .symptoms-container{
         margin-bottom: 0;
     }
+    .tag-wrapper {
+        margin-bottom: 16px;
+    }
+    .registered .step-header {
+        margin-bottom: 16px;
+    }
+    .form-control {
+        margin-bottom: 16px;
+    }
 }
